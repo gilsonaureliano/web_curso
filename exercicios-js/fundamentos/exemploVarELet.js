@@ -24,3 +24,8 @@ for (let i = 0; i < 10; i++){
 
 funcs1[2]() //2
 funcs1[8]() //8
+
+
+isAtivo = ''
+
+console.log(!isAtivo)
