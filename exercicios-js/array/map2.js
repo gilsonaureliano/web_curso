@@ -12,6 +12,7 @@ console.log(carrinho3)
 
 const precos = produto => produto.preco
 
+
 const resul = carrinho3.map(precos)
 
 console.log(resul)
