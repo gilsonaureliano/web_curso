@@ -6,7 +6,7 @@ const carrinho = [
 ]
 
 // Retornar um array apenas com os preços
-
+console.log(carrinho)
 const carrinho3 = carrinho.map(JSON.parse)
 console.log(carrinho3)
 
