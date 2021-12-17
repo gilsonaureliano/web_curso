@@ -1,5 +1,5 @@
 const url = 'http://files.cod3r.com.br/curso-js/funcionarios.json'
-const axios = require('axios') //axios faz requisições do que está remoto
+const axios = require('axios') //axios faz requisições do que está remoto, é uma biblioteca que foi instalada
 
 
 axios.get(url).then(response => {
