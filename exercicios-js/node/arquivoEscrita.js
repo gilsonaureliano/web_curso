@@ -7,5 +7,5 @@ const produto = {
 }
 
 fs.writeFile(__dirname + '/arquivoGerado.json', JSON.stringify(produto), err =>{
-    console.log(err || 'Arquivo slavo')
+    console.log(err || 'Arquivo salvo') // se err for true, poderiamos escrever outro processo.
 })
