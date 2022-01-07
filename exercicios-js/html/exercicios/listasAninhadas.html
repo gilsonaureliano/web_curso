@@ -1,0 +1,64 @@
+<h1>Projeto</h1>
+<ul class="tree">
+    <li>
+        <span wm-foldes>Backend</span>
+        
+        <ul>
+            <li>
+                <span wm-foldes>app</span>
+                
+                <ul>
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                    <li>compras.js</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-foldes>config</span>
+                
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>serviços.js</li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+    </li>
+    <li>
+        <span wm-foldes>frontend</span>
+        
+        <ul>
+            <li>
+                <span wm-foldes>public</span>
+                
+                <ul>
+                    <li>app.js</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+
+    </li>
+</ul>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<!-- O link acima fornece o stylo das listas-->
+
+<script>
+    document.querySelectorAll('[wm-foldes]').forEach(foldes => {
+        foldes.onclick = function(e) {
+            
+            const ul = foldes.nextElementSibling // pega o proximo elemento
+            const d = ul.style.display // pega o display
+            ul.style.display = d === 'none'? 'block': 'none' // block invisivel - none visivel
+            // o teste devera ser realizado direto na pagina listasAninhadas.html
+           
+
+        }
+    })
+</script>
