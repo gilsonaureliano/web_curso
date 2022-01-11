@@ -6,6 +6,20 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://specificity.keegan.st/ */
+        /*
+
+        Ordem Prioridade
+            1. Inline
+            2. ID
+            3. Classe, Pseudo-Classe, atributo
+            4. Elemento, Pseudo-Elementos
+        
+        */
+        body { font-size: 40px;}
+        div { background-color: #00b; color: #fff;}
+        div[wm-cor] { background-color: darkorange;}
+        div:hover { background-color: purple;}
+
     </style>
 </head>
 

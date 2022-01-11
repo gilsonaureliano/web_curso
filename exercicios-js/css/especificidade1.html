@@ -6,6 +6,27 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /*
+        Em linhas gerais...ordem de prioridade
+
+        1. regra com !important (evite pois força uma ação)
+        2. seletores mais específicos
+        3. última regra processada (empate)
+        */
+
+        p {
+            background-color: #aaa;
+        }
+
+        .observacao {
+            background-color: #5F5;
+            border: dashed 5px;
+            padding: 20px;
+            font-size: 40px;
+        }
+
+
+
     </style>
 </head>
 
